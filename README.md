@@ -1,8 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Raiz NextJS Application
 
-## Getting Started
+A modern, performant web application built with Next.js 15, React 19, and TailwindCSS. This project uses the latest features of Next.js including the App Router, Server Components, and TurboPack for enhanced development experience.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Tech Stack**: Built with Next.js 15, React 19, and TypeScript
+- **Optimized Performance**: Utilizes TurboPack for faster development builds
+- **Responsive Design**: Mobile-first approach using TailwindCSS
+- **Type Safety**: Full TypeScript support for enhanced development experience
+- **Modern Styling**: Tailwind CSS for utility-first styling
+- **Optimized Fonts**: Uses Geist font family through `next/font` for optimal loading
+- **ESLint Configuration**: Strict linting rules for code quality
+
+## 🛠️ Prerequisites
+
+- Node.js 18.x or later
+- npm, yarn, pnpm, or bun package manager
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd raiz-nextjs
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+## 🚀 Development
+
+Start the development server with TurboPack enabled:
 
 ```bash
 npm run dev
@@ -14,23 +50,75 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+# or
+bun build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🧪 Linting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the linter:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+# or
+yarn lint
+# or
+pnpm lint
+# or
+bun lint
+```
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+raiz-nextjs/
+├── app/                    # App router directory
+│   ├── page.tsx           # Main page component
+│   ├── layout.tsx         # Root layout
+│   └── globals.css        # Global styles
+├── public/                # Static assets
+├── next.config.ts         # Next.js configuration
+├── tailwind.config.js     # Tailwind CSS configuration
+├── postcss.config.mjs     # PostCSS configuration
+└── tsconfig.json         # TypeScript configuration
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Configuration
+
+- **Next.js**: Configuration in `next.config.ts`
+- **TypeScript**: Configuration in `tsconfig.json`
+- **TailwindCSS**: Configuration in `tailwind.config.js`
+- **ESLint**: Configuration in `eslint.config.mjs`
+
+## 📚 Learn More
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [TailwindCSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+
+## 🚀 Deployment
+
+The application is optimized for deployment on [Vercel](https://vercel.com). Simply connect your repository to Vercel for automatic deployments.
+
+For other platforms, build the application using:
+```bash
+npm run build
+npm run start
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
